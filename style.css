@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f9f9f9;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 15px 60px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 28px;
+  color: #ff0090;
+}
+
+.nav-links {
+  flex: 1;
+  text-align: center;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff0090;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-link {
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.login-link:hover {
+  color: #ff0090;
+}
+
+.btn-signup {
+  background-color: #ff0090;
+  border: none;
+  padding: 8px 16px;
+  color: white;
+  font-size: 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-signup:hover {
+  background-color: #e6007e;
+}
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  position: relative;
+}
+
+.left-content {
+  width: 50%;
+}
+
+.left-content h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.left-content h2 span {
+  color: #ff0090;
+}
+
+.left-content p {
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.search-bar {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.search-bar input {
+  padding: 12px;
+  flex: 1;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.search-bar button {
+  padding: 12px 20px;
+  background-color: #ff0090;
+  border: none;
+  color: white;
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #e6007e;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.service-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.right-content {
+  width: 50%;
+  position: relative;
+  margin-left: 20px; 
+  
+}
+
+.couple-img {
+  border-radius: 25%;
+  width: 100%;
+  height: auto;
+}
+
+.scroll-down {
+  position: absolute;
+  left: 30px;
+  bottom: -300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #666;
+  font-size: 14px;
+}
+
+.dots {
+  position: absolute;
+  right: 30px;
+  bottom: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.yellow { background: #ffcc00; }
+.dot.blue { background: #3399ff; }
+.dot.red { background: #ff0090; }
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.about-content {
+  margin-top: 25%;
+  width: 200%;
+  text-align: center;
+  background: #fff;
+  max-width: 800px;
+}
+
+.about-content h2 {
+  font-size: 36px;
+  color: #ff0090;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.learn-more-btn {
+  background-color: #ff0090;
+  border: none;
+  padding: 12px 24px;
+  color: white;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.learn-more-btn:hover {
+  background-color: #e6007e;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 60%;
+  height: 500px;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%; /* Optional: so images fill height too if needed */
+  object-fit: none; /* Optional: ensures images don't stretch weirdly */
+}
+
+.swiper .swiper-button-prev, 
+.swiper .swiper-button-next {
+  color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background: white;
+}

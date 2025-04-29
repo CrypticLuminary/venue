@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Venue Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+
+
+</head>
+
+<body>
+  <header class="navbar">
+    <div class="logo">VenueHub</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">About Us</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact Us</a>
+    </nav>
+    <div class="auth-buttons">
+      <a href="#" class="login-link">
+        <i class="fa fa-user"></i> Login
+      </a>
+      <button class="btn-signup">
+        <i class="fa fa-user-plus"></i> Sign up
+      </button>
+    </div>
+  </header>
+
+
+  <section class="hero-section">
+    <div class="left-content">
+      <h2>Hi,welcome to my <span>Dream Wedding</span></h2>
+      <p>“I am the happiest person right now”- some dudes last moment of happiness</p>
+
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="services">
+        <div class="service-item">Venues Available</div>
+        <div class="service-item">Locations</div>
+        <div class="service-item">Restaurant Bookings</div>
+        <div class="service-item">Hotel Bookings</div>
+        <div class="about-content">
+          <h2>Why Us?</h2>
+          <p>At <strong>VenueHub</strong>, we turn your dreams into reality by connecting you with the perfect venues
+            for every occasion — from magical weddings to corporate events and personal celebrations. Our passion lies
+            in creating unforgettable memories by making your event planning effortless, exciting, and tailored just for
+            you.</p>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="right-content">
+      <img src="images/img1.jpg" alt="Wedding Couple" class="couple-img">
+    </div>
+
+    <div class="dots">
+      <div class="dot yellow"></div>
+      <div class="dot blue"></div>
+      <div class="dot red"></div>
+    </div>
+  </section>
+
+  <div class="scroll-down">
+    <i class="fas fa-mouse"></i>
+    <span>Scroll Down</span>
+  </div>
+  <div class="container">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="images/img1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="images/img1.jpg" alt=""></div>
+        <!-- You can continue adding slides -->
+      </div>
+
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>  
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
