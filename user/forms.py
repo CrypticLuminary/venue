@@ -13,6 +13,10 @@ class CustomLoginForm(forms.Form):
     email = forms.EmailField()
     password = forms.CharField(widget=forms.PasswordInput)
 
+    def __init__(self, request=None, *args, **kwargs):
+        self.request = request  # store it if you want to use it later
+        super().__init__(*args, **kwargs)
+
 class UserProfileForm(forms.ModelForm):
     class Meta:
         model = UserProfile
