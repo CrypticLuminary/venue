@@ -1,10 +1,11 @@
-/* Basic Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Close button */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -20,7 +21,7 @@
     color: #ff0090;
 }
 
-/* Container */
+/* Common Container */
 .login-container {
     background: white;
     padding: 2rem 3rem;
@@ -28,13 +29,38 @@
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
-    display:none;
-    position:absolute;
-    top:10%;
-    right:7%;
+    display: none; /* hidden initially */
+    position: fixed; /* Fixed positioning */
+    top: 33%; 
+    right:-5%;
+    transform: translate(-50%, -50%); /* Center both forms */
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+}
+
+.sign-container {
+    background: white;
+    padding: 2rem 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    display: none; /* hidden initially */
+    position: fixed; /* Fixed positioning */
+    top: 33%; 
+    right:-5%;
+    transform: translate(-50%, -50%); /* Center both forms */
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
 }
 
 /* Form */
+.login-form {
+    width: 100%;
+}
+
 .login-form h2 {
     text-align: center;
     color: #333;
@@ -49,8 +75,8 @@
 
 .input-group i {
     position: absolute;
-    top: 65%;
-    left: 15px;
+    top: 63%;
+    left: 20px;
     transform: translateY(-50%);
     color: #888;
 }
