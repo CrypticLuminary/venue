@@ -7,7 +7,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: #f0f2f5;
-    color: #333;
+    color: #1a1a1a;
     line-height: 1.6;
 }
 
@@ -192,6 +192,7 @@ footer {
   
   .links {
     list-style-type: none;
+    color:#333131;
   }
   
   .subscriber {
@@ -246,10 +247,12 @@ footer {
     display: -webkit-inline-flex;
   }
   footer {
-   
+    border-top:1px solid black;
+     box-shadow:#ff0090; 
     text-align: center;
     padding: 15px;
     font-size: 14px;
+    background-color: #e1e0e0;
     }
 .copyright{
     text-align: center;
@@ -268,8 +271,7 @@ width: 10px;
   #end {
     font-weight: bolder;
     text-align: center;
-    margin-top: 20px;
-
+    padding-top:20px;
     font-size: 20px;
   }
   #contact{
@@ -285,3 +287,9 @@ width: 10px;
 #contact:hover{
     background: #972391;
 }
+
+.copy {
+    background-color: #e1e0e0;
+}
+
+

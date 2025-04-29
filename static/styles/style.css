@@ -10,8 +10,11 @@ html {
 
 body {
     font-family: 'lato', sans-serif;
+    height: 100vh;
 }
-
+.block{
+    height: 100vh;
+}
 /* Navigation Styles */
 .main-nav {
     background-color:white;

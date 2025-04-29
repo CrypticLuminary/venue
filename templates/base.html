@@ -28,16 +28,19 @@
 
 <body>
     {% include 'includes/nav.html' %}
-    
-    {% block content %}
+    <div class="block">
 
-
-    {% endblock content %}
-
-    {% include 'includes/aboutus.html' %}
+        {% block content %}
+        
+        
+        {% endblock content %}
+    </div>
+    <!-- {% include 'includes/aboutus.html' %} -->
+ 
 
     
     
     <script src="{% static 'scripts/script.js' %}"></script>
 </body>
+{% include 'includes/footer.html' %}
 </html>
