@@ -13,7 +13,7 @@ class UserRegisterView(CreateView):
 # User Login
 class UserLoginView(LoginView):
     authentication_form = CustomLoginForm
-    template_name = 'user/login.html'
+    template_name = 'includes/login.html'
 
 # User Logout (simple)
 class UserLogoutView(LogoutView):
