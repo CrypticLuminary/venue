@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 
-def services(request):
-    return render(request, 'html/services.html')
+def home(request):
+    return HttpResponse('Hello,welcome to our website')
+    
+

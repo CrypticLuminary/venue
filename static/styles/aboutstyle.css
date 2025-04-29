@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Section container */
+.contact-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Header */
+.contact-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-header h1 {
+    font-size: 3rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* Content layout */
+.contact-content {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    display: inline-block;
+    margin-left: 150px;   
+ 
+}
+
+/* Form */
+.contact-form {
+    height: 355px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    width: 375px;
+    display: inline-block;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: inline-grid;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 15px;
+}
+.form-group-message{
+    margin-bottom: -15px;
+    text-align: center;
+
+}
+
+ .form-group input,
+.form-group textarea {
+    height: 35px;
+    width: 35%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+} 
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #ff0090;
+    outline: none;     
+}
+#fname{
+    font-size: 10px;
+    width: 150px;
+    margin-right : 15px;
+}
+#lname{
+    font-size: 10px;
+    width: 150px;
+    margin-right : 15px;
+}
+#email{
+    font-size: 10px;
+    width: 150px;
+    margin-right : 15px;
+}
+#phone{
+    font-size: 10px;
+    width: 150px;
+    margin-right : 15px;
+}
+#messages{
+    height: 60px;
+    font-size: 10px;
+    width: 95%;
+    margin-right : 15px;  
+    padding: 10px;
+    border-radius: 12px;
+    outline: none;
+}
+.form-group-message input:focus,
+.form-group-message textarea:focus {
+    border-color: #ff0090;
+    outline: none; 
+}
+
+/* Submit Button */
+.submit-button {
+    
+    padding: 5px;
+    background: #ff0090;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+    }
+
+.submit-button:hover {
+    background: #972391;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    flex: 1;
+    width: 850px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    
+}
+
+.contact-info h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.contact-info p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.contact-info strong {
+    color: #000;
+}
+.lastline{
+    display: inline-block;
+
+}
+footer {
+    display: flex;
+    align-items: center;
+    padding-left: 0px;
+  }
+  
+  .navigations {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .links {
+    list-style-type: none;
+  }
+  
+  .subscriber {
+    width: 20%;
+   
+  }
+  #subscribtion{
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding: 3%;
+     }
+   
+     .subscriber input:focus,
+   .subscriber textarea:focus {
+    border: 1px solid #ff0090;
+    }
+    #join{
+        padding: 2px;
+        background: #ff0090;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+    #join:hover{
+        background: #972391;
+    }
+  .logos {
+    display: flex;
+    gap: 10px;
+  }
+  a {
+    text-decoration: none;
+    color: #888888;
+  }
+  .column {
+    margin: 0;
+    padding: 0;
+  }
+  .rights-text {
+    font-size: 14px;
+    margin-top: 10px;
+    display: inline-block;
+  }
+  .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    display: -webkit-inline-flex;
+  }
+  footer {
+   
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    }
+.copyright{
+    text-align: center;
+    margin: 30px;
+    
+}
+.png-container {
+height: 10px;
+width: 10px;
+}
+
+.png {
+    object-fit: contain;
+ 
+}
+  #end {
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 20px;
+
+    font-size: 20px;
+  }
+  #contact{
+    padding: 6px;
+    background: #ff0090;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+#contact:hover{
+    background: #972391;
+}
