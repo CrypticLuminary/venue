@@ -1,5 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,HttpResponse
 
 def home(request):
-
-    return render(request, './vendorlist.html')
+    return HttpResponse('Hello,welcome to our website')
+    
