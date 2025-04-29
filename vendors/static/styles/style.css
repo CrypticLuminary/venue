@@ -1,0 +1,186 @@
+{% load static %}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+    margin: 0 0 10px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #9333ea, #ec4899);
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .btn {
+    background-color: white;
+    color: #9333ea;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: background 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #f3f3f3;
+    border: 2px solid  black;
+  }
+  
+  /* Services Section */
+  .services {
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+  }
+  
+  
+  
+  
+  .card {
+    height: 170px;
+    width: 550px;
+    background: white;
+    color: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    display: inline-block;
+    margin: 10px;
+  }
+  #card1{
+    background-color: rgb(238, 187, 153);
+  }
+  #card2{
+    background-color:rgb(152, 90, 8);
+  }
+  #card3{
+    background-color: rgb(82, 27, 246);
+  }
+  #card4{
+    background-color: rgb(223, 54, 192);
+  }
+  .div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .left{
+    height: 100%;
+    width: 70%;
+    padding: 30px;
+    display: inline-box;
+  }
+  #right1{
+    height: 100%;
+    width: 110%;
+    display: inline-box;
+    
+    background-image: url('static/images/venuee.jpg');
+
+    background-size: cover;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 21% 100%);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+  }
+  #right2{
+    height: 100%;
+    width: 110%;
+    display: inline-box;
+    background-image: url('static/images/wedphoto.jpg');
+    background-size: cover;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 21% 100%);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+  }
+  #right3{
+    height: 100%;
+    width: 110%;
+    display: inline-box;
+    background-image: url('static/images/music.jpg');
+    background-size: cover;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 21% 100%);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+  }
+  #right4{
+    height: 100%;
+    width: 110%;
+    display: inline-box;
+    background-image: url('static/images/decoration.jpg');
+    background-size: cover;
+    clip-path: polygon(49% 0, 100% 0, 100% 100%, 21% 100%);
+    border-top-right-radius:10px ;
+    border-bottom-right-radius: 10px;
+  }
+  .left:hover{
+     
+   }
+
+  
+  #photo{
+    width: auto;
+    background-image: url("static/images/wedphoto.jpg");
+    background-size: cover;
+  }
+ 
+  
+  .card:hover {
+    transform: translateY(-8px);
+  }
+  
+  .card img {
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Section */
+  .contact {
+    background-color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .contact p {
+    margin-bottom: 25px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #e5e7eb;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  
