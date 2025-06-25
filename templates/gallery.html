@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+    
+{% block content %}
+
+
+
+{% block styles %}
+    <link rel="stylesheet" href="{% static 'styles/gallery-styles.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+{% endblock styles %} 
+
+  <!-- Stylesheets -->
+
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="left-content">
+      <h2>Hi, welcome to my <span>Dream Wedding</span></h2>
+      <p>“I am the happiest person right now” - some dude's last moment of happiness</p>
+
+      <div class="search-bar">
+        <input type="text" placeholder="Search" />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+
+      <div class="services">
+        <div class="service-item">Venues Available</div>
+        <div class="service-item">Locations</div>
+        <div class="service-item">Restaurant Bookings</div>
+        <div class="service-item">Hotel Bookings</div>
+        <div class="about-content">
+          <h2>Why Us?</h2>
+          <p>At <strong>VenueHub</strong>, we turn your dreams into reality by connecting you with the perfect venues for every occasion — from magical weddings to corporate events and personal celebrations.</p>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-content">
+      <img src="{% static 'images/img1.jpg' %}" alt="Wedding Couple" class="couple-img" />
+    </div>
+
+    <div class="dots">
+      <div class="dot yellow"></div>
+      <div class="dot blue"></div>
+      <div class="dot red"></div>
+    </div>
+  </section>
+
+  <!-- Scroll Down -->
+  <div class="scroll-down">
+    <i class="fas fa-mouse"></i>
+    <span>Scroll Down</span>
+  </div>
+
+  <!-- Swiper Slider -->
+  <div class="container">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="{% static 'images/img1.jpg' %}" alt=""></div>
+        <div class="swiper-slide"><img src="{% static 'images/img2.jpg' %}" alt=""></div>
+        <div class="swiper-slide"><img src="{% static 'images/img3.jpg' %}" alt=""></div>
+        <div class="swiper-slide"><img src="{% static 'images/img4.jpg' %}" alt=""></div>
+        <div class="swiper-slide"><img src="{% static 'images/img5.jpg' %}" alt=""></div>
+        <div class="swiper-slide"><img src="{% static 'images/img5.jpg' %}" alt=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <h2 class="gallery-heading">Venue Gallery</h2>
+    <div class="gallery-grid">
+      <img src="images/img1.jpg" class="gallery-item" alt="Gallery Image">
+      <img src="images/img2.jpg" class="gallery-item" alt="Gallery Image">
+      <img src="images/img3.jpg" class="gallery-item" alt="Gallery Image">
+      <img src="images/img4.jpg" class="gallery-item" alt="Gallery Image">
+      <img src="images/img5.jpg" class="gallery-item" alt="Gallery Image">
+      <img src="images/img1.jpg" class="gallery-item" alt="Gallery Image">
+    </div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+{% endblock content %}
+     <script src="{% static 'scripts/gallery.js' %}"></script>
+{% block script %}{% endblock script %}
+
+
+
+

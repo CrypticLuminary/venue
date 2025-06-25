@@ -1,0 +1,222 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.8rem;
+  color: #d62828;
+}
+
+.nav-links a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.login-link, .btn-signup {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: #d62828;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-link {
+  background-color: transparent;
+  color: #d62828;
+  border: 1px solid #d62828;
+}
+
+.btn-signup:hover,
+.login-link:hover {
+  opacity: 0.9;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  padding: 40px;
+  gap: 40px;
+  background: #fff0f0;
+}
+
+.left-content {
+  flex: 1;
+}
+
+.left-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.left-content span {
+  color: #d62828;
+}
+
+.search-bar {
+  margin: 20px 0;
+  display: flex;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 10px;
+  background-color: #d62828;
+  color: white;
+  border: none;
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.service-item {
+  background-color: #fff;
+  padding: 10px;
+  border-left: 4px solid #d62828;
+}
+
+.about-content {
+  margin-top: 20px;
+}
+
+.learn-more-btn {
+  margin-top: 10px;
+  background-color: #d62828;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.right-content {
+  flex: 1;
+  background-color: #a64949; /* red border to match your color scheme */
+  border-radius: 8px; /* match image rounding */
+  padding: 10px; /* add some padding so border doesn't touch the image */
+  box-sizing: border-box; /* ensure padding is inside border */
+}
+
+.couple-img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  gap: 10px;
+  padding: 10px 40px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.yellow { background: yellow; }
+.dot.blue { background: blue; }
+.dot.red { background: red; }
+
+/* Scroll Down */
+.scroll-down {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+.scroll-down i {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+/* Swiper */
+.swiper {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #fff;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Pacifico', cursive;
+  color: #333;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* No gap between images */
+  justify-items: center;
+}
+
+.gallery-item {
+  aspect-ratio: 1 / 1; /* Perfect square */
+  width: 100%;
+  max-width: 400px; /* Limit the size of each image */
+  object-fit: cover;
+  display: block;
+  border-radius: 60px;
+  box-shadow: none;
+}
+
+
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+
