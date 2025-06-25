@@ -8,5 +8,9 @@ class Venue(models.Model):
 
     def __str__(self):
         return self.name
+    
+class Home(models.Model):
+    title  = models.CharField( max_length=50)
+    discription = models.TextField()
 
 
